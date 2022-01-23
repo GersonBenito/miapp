@@ -18,5 +18,6 @@ Props.args = {
     label: 'Button',
     type: 'button',
     disabled: false,
+    block: false,
 }
 

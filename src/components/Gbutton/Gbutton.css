@@ -109,6 +109,11 @@ button.round{
     border-radius: 25px;
 }
 
+button.block{
+    display: block;
+    width: 100%;
+}
+
 
 
 

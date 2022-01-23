@@ -2,15 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Gbutton.css';
 
-const Gbutton = ({ color, onClick, label, round, type, disabled }) => {
+const Gbutton = ({ color, onClick, label, round, type, disabled, block }) => {
     
-    const mode = round ? 'round': ''
+    const mode = round ? 'round': '';
+    const extend = block ? 'block': ''
     
     return ( 
         <button 
             type={ type }
             onClick={ onClick } 
-            className={`${color} ${mode}`} 
+            className={`${color} ${mode} ${extend}`} 
             disabled={ disabled }
         >
             { label}
@@ -36,6 +37,7 @@ Gbutton.propTypes = {
     onClick: PropTypes.func,
     type: PropTypes.oneOf(['button','submit']),
     disabled: PropTypes.bool,
+    block: PropTypes.bool,
 }
 
 // agregando props por defecto
@@ -45,6 +47,7 @@ Gbutton.defaultProps = {
     round: false,
     type: 'button',
     disabled: false,
+    block: false,
 }
 
 export default Gbutton
