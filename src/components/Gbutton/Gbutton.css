@@ -1,0 +1,114 @@
+@import url("../../style/colors.css");
+
+button{
+    outline: 0;
+    border: 0;
+    padding: 16px 48px;
+    border-radius: 0.25rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all ease-in .2s;
+    letter-spacing: 1px;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+}
+
+/* colores principales */
+button.primary{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+button.primary:hover{
+    background-color: var(--primary-hover);
+    color: var(--white);
+}
+
+button.secondary{
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+button.secondary:hover{
+    background-color: var(--secondary-hover);
+    color: var(--white);
+}
+
+button.info{
+    background-color: var(--info);
+    color: var(--white);
+}
+
+button.info:hover{
+    background-color: var(--info-hover);
+    color: var(--white);
+}
+
+button.warning{
+    background-color: var(--warning);
+    color: var(--dark);
+}
+
+button.warning:hover{
+    background-color: var(--warning-hover);
+    color: var(--dark)
+}
+
+button.danger{
+    background-color: var(--danger);
+    color: var(--white);
+}
+
+button.danger:hover{
+    background-color: var(--danger-hover);
+    color: var(--white);
+}
+
+button.success{
+    background-color: var(--success);
+    color: var(--white);
+}
+
+button.success:hover{
+    background-color: var(--success-hover);
+    color: var(--white);
+}
+
+button.dark{
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+button.dark:hover{
+    background-color: var(--dark-hover);
+    color: var(--white);
+}
+
+button.light{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+button.light:hover{
+    background-color: var(--light-hover);
+    color: var(--dark);
+}
+
+button:disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* formas del boton */
+button.round{
+    border-radius: 25px;
+}
+
+
+
+
